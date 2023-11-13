@@ -1,36 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GPT Description Engineering Project</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Models</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1f2b; /* Dark bluish-grey background */
+            color: #f4f4f4;
+            font-family: 'Roboto', sans-serif; /* Roboto font */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+        }
+        .profile-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #f4f4f4;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .profile-link img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .logo-container img {
+            max-width: 200px;
+            margin-bottom: 40px; /* Space between logo and search bar */
+        }
+        .search-container {
+            margin-top: -50px; /* Adjust based on content above */
+        }
+        .search-container input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            color: #333;
+        }
+        .additional-links a {
+            color: #4a90e2; /* Lighter blue for links */
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .additional-links a:hover {
+            text-decoration: underline;
+        }
+        p {
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <a href="https://github.com/alenperic">
-            <img src="https://avatars.githubusercontent.com/u/20021065?v=4" alt="GitHub Profile Icon" class="github-icon">
-        </a>
-        <span class="github-username"><a href="https://github.com/alenperic">alenperic</a></span>
-    </header>
-
+    <a href="https://github.com/alenperic" target="_blank" class="profile-link">
+        <img src="https://avatars.githubusercontent.com/u/20021065?v=4" alt="GitHub Profile Picture">
+        <span>@alenperic</span>
+    </a>
+    <div class="logo-container">
+        <img src="https://downloads.intercomcdn.com/i/o/406339/b83d08f20c6d78f99331343f/71bc35f3a54fb38a5fff9ef2d4c1879d.png" alt="ChatGPT Logo">
+    </div>
+    <div class="search-container">
+        <input type="text" id="gpt-search" placeholder="Search GPT models..." onkeypress="search(event)">
+        <br> <!-- Line break added here -->
+    </div>
     <main>
-        <div class="logo-container">
-            <img src="https://downloads.intercomcdn.com/i/o/406339/b83d08f20c6d78f99331343f/71bc35f3a54fb38a5fff9ef2d4c1879d.png" alt="ChatGPT Logo">
-        </div>
-        <div class="search-container">
-            <input type="text" id="gpt-search" placeholder="Search GPT models..." onkeypress="search(event)">
-        </div>
+        <br>
         <div class="additional-links">
-            <a href="https://chat.openai.com/gpts/editor">Create Your Own GPT Model</a>
+            <a href="https://chat.openai.com/g/">Create Your Own GPT Model</a>
+            <br><br>
             <a href="https://help.openai.com/en/articles/8554397-creating-a-gpt">GPT Support Article</a>
         </div>
+        <p>Explore ChatGPT models and their strengths. <a href="https://github.com/alenperic/My-GPT-Model-Engineer">Recommendations for "My GPT" Prompt Engineering Phrases</a></p>
     </main>
-
-    <script>
-        function search(event) {
-            if (event.key === 'Enter') {
-                window.location.href = `https://www.google.com/search?q=site:chat.openai.com/g/+${document.getElementById('gpt-search').value}`;
-            }
-        }
-    </script>
 </body>
 </html>
