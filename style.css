@@ -1,0 +1,104 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2f3a; /* Dark grey-blue background */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 18px; /* Increased default font size */
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.github-icon {
+    width: 60px; /* Increased icon size */
+    height: 60px;
+    border-radius: 50%;
+}
+
+.github-username {
+    margin-left: 15px;
+    color: white;
+    font-size: 24px; /* Increased font size */
+}
+
+/* Logo styling */
+.logo-container img {
+    width: 200px; /* Increased logo size */
+    margin-bottom: 30px;
+}
+
+/* Search bar styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Increased space above additional links */
+}
+
+#GPT-search {
+    width: 500px; /* Increased width */
+    padding: 20px; /* Increased padding */
+    border: 2px solid #4fa1f3; /* Styled border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Larger font size */
+    color: #2b2f3a; /* Text color */
+    background-color: white; /* Background color */
+}
+
+#GPT-search:focus {
+    outline: none;
+    border-color: #76baff; /* Highlight color on focus */
+}
+
+/* Additional links styling */
+.additional-links {
+    text-align: center;
+    font-size: 20px; /* Increased font size for links */
+}
+
+.additional-links a {
+    color: #4fa1f3; /* Bright blue for links */
+    text-decoration: none;
+    display: block; /* Each link on a new line */
+    margin: 10px 0; /* Increased space between links */
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .github-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .github-username {
+        font-size: 20px;
+    }
+
+    #GPT-search {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .logo-container img {
+        width: 150px;
+    }
+
+    .additional-links {
+        font-size: 18px;
+    }
+}
