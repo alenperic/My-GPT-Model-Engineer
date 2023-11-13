@@ -1,4 +1,4 @@
-# Specialized My GPT Models with Defined Strengths
+# My GPT Description Prompt Engineering
 
 ## Overview
 This document provides a comprehensive guide to employing specialized ChatGPT model prompts in GPT model engineering. It details a range of model configurations, each designed to cater to specific areas of interest and professional needs. These prompts serve as a blueprint for engineers and developers to refine ChatGPT models, enhancing their capability to deliver expert-level knowledge and insights in various fields. The structured format of the strengths and capabilities within each model is intended to assist in the tailored development and optimization of ChatGPT models, ensuring their applicability in diverse scenarios, from educational to professional environments.
