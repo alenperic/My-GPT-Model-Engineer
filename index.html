@@ -82,5 +82,15 @@
         </div>
         <p>Explore ChatGPT models and their strengths. <a href="https://github.com/alenperic/My-GPT-Model-Engineer">Recommendations for "My GPT" Prompt Engineering Phrases</a></p>
     </main>
+    <script>
+        function search(event) {
+            if (event.key === 'Enter') {
+                var searchText = document.getElementById('gpt-search').value;
+                var query = 'site:chat.openai.com/g/ ' + searchText;
+                var encodedQuery = encodeURIComponent(query);
+                window.location.href = 'https://www.google.com/search?q=' + encodedQuery;
+            }
+        }
+    </script>
 </body>
 </html>
